@@ -1,0 +1,17 @@
+:root {
+  --purple: rgb(42, 29, 163);
+  --lightgray: #dcdee3;
+  --darkgray: #868b94;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--darkgray);
+  border-radius: 7px;
+
+  /* 스크롤바 공간에 padding을 주는 꼼수 */
+  background-clip: padding-box;
+  border: 5px solid transparent;
+}
