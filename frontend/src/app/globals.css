@@ -1,7 +1,7 @@
 :root {
   --purple: rgb(42, 29, 163);
+  --darkgray: #1c1c1c;
   --lightgray: #dcdee3;
-  --darkgray: #868b94;
 }
 
 ::-webkit-scrollbar {

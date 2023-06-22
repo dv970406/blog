@@ -1,11 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
 @layer components {
   /* fonts */
   .text-greeting {
-    @apply text-4xl font-semibold sm:text-6xl;
+    @apply text-4xl font-semibold sm:text-7xl;
   }
   .text-title {
     @apply text-3xl font-semibold sm:text-4xl;
@@ -19,44 +26,38 @@
   .text-sub {
     @apply text-[0.95rem] font-normal;
   }
-  .text-accent {
-    @apply text-lg font-extrabold;
-  }
-  .text-subaccent {
-    @apply text-[0.95rem] font-semibold;
-  }
   .text-cute {
     @apply text-xs font-medium;
   }
-  .text-error {
-    @apply text-base text-red-500 font-semibold;
-  }
   .text-gradient {
-    @apply text-transparent bg-clip-text bg-gradient-to-tr from-pink-500 to-violet-500;
+    @apply text-transparent bg-clip-text bg-gradient-to-tr from-[#B2A4FF] from-[5%]  via-[#FFB4B4] via-[50%] to-[#FDF7C3] to-[80%];
   }
 
   /* 반응형 화면 구성용 */
   .layout {
-    @apply sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg px-4 mx-auto my-8 justify-center;
+    @apply sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg px-4 mx-auto mt-8 justify-center;
   }
 
   /* color transitions */
   .ring-transition {
-    @apply focus:ring-2 ring-offset-2 transition duration-300 ring-custom-orange;
+    @apply border-2 focus:border-custom-blue  transition duration-300 border-custom-black;
   }
   .opacity-transition {
     @apply transition-opacity duration-300 opacity-30 hover:opacity-100;
   }
   .text-darkgray-transition {
-    @apply transition-colors duration-300 text-black hover:text-custom-darkgray;
+    @apply transition-colors duration-300 text-white hover:text-custom-darkgray;
   }
   .text-lightgray-transition {
-    @apply transition-colors duration-300 text-black hover:text-custom-lightgray;
+    @apply transition-colors duration-300 text-white hover:text-custom-lightgray;
   }
   .text-blue-transition {
-    @apply transition-colors duration-300 text-black hover:text-custom-orange;
+    @apply transition-colors duration-300 text-white hover:text-custom-blue;
+  }
+  .border-blue-transition {
+    @apply transition-colors duration-300 border-[1px] border-custom-lightgray hover:border-custom-blue;
   }
   .border-b-transition {
-    @apply transition-colors duration-300 border-b-[1px] border-b-custom-lightgray hover:border-b-custom-orange;
+    @apply transition-colors duration-300 border-b-[1px] border-b-custom-lightgray hover:border-b-custom-blue;
   }
 }
