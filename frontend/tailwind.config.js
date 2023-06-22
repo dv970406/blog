@@ -7,13 +7,31 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        pretandard: ["Pretendard-Regular"],
+      },
       colors: {
         custom: {
-          blue: "#3457D5", //#0CAFFF
-          darkgray: "#868B94",
+          blue: "#0CAFFF", //#0CAFFF
+          darkgray: "#1C1C1C",
           lightgray: "#DCDEE3",
           black: "#121212",
         },
+      },
+      keyframes: {
+        "appear-bottom-to-top": {
+          from: {
+            opacity: 0,
+            transform: "translateY(100%)",
+          },
+          to: {
+            opacity: 1,
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        "appear-bottom-to-top": "1s appear-bottom-to-top ease-in-out forwards",
       },
     },
   },
