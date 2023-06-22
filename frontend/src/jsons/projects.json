@@ -13,16 +13,16 @@
     ],
     "github": "",
     "link": "https://www.sopa.pro",
-    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=641b01e2c7fb4aa59d8dfa5d59cd1f73&pm=s"
+    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=4ffc93a0a4064b26a6ad53d5ef3dcc5f&pm=c"
   },
   {
     "title": "intern-project",
-    "description": "인턴 시절 과제로 진행한 바닐라 자바스크립트로 만든 사내 연차관리 프로젝트입니다.",
+    "description": "인턴 시절 과제로 진행한 바닐라 자바스크립트로 만든 사내 연차관리 프로젝트입니다. 리액트처럼 작동하도록 만들기 위해 웹 컴포넌트를 활용하여 SPA스럽게 만들어보았습니다.",
     "thumbnail": "intern-project.gif",
     "stacks": ["HTML", "CSS", "Javascript", "Express"],
     "github": "",
     "link": "",
-    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=399ddeada7ac40349dc6a588883c13b5&pm=s"
+    "review": ""
   },
   {
     "title": "relay study",
@@ -31,16 +31,16 @@
     "stacks": ["React", "Emotion", "Typescript", "Relay", "NestJS", "TypeORM"],
     "github": "",
     "link": "",
-    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=19ce96d0a7b24dacbc85c8922bccfcf8&pm=s"
+    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=765fba4515644a5684c80bc402fc2480&pm=c"
   },
   {
     "title": "poc",
-    "description": "사내 PoC 프로젝트입니다. C#의 소켓통신 기술인 SignalR을 활용하여 데이터를 받아 UI로 위젯을 띄워주고 Unity 장비에 데이터를 넘겨주어 시각적으로 장비의 상태를 나타내게 하였습니다.",
+    "description": "사내 PoC 프로젝트입니다. C#의 소켓통신 기술인 SignalR을 활용하여 데이터를 받아 UI로 위젯을 띄워주고 Unity 장비에 데이터를 넘겨주어 시각적으로 장비의 상태를 나타내는 역할을 맡았습니다.",
     "thumbnail": "poc.gif",
     "stacks": ["React", "TailwindCSS", "Recoil", "Typescript", "SignalR"],
     "github": "",
     "link": "",
-    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=46f6deedb48946329e7d4ca748e59981&pm=s"
+    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=643f52e17abe462f9af8655fbb4de3c0&pm=c"
   },
   {
     "title": "recruit",
@@ -58,6 +58,6 @@
     ],
     "github": "https://github.com/dv970406/danggn-recruit",
     "link": "https://danggn-recruit.vercel.app/",
-    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=efaeb4ae0e0640048cf20ecba5b202d2&pm=s"
+    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=c15c5530600240b2a3df4a1aff52fa70&pm=c"
   }
 ]
