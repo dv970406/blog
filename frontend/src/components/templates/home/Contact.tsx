@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
 import SendEmail from "@/components/organisms/home/SendEmail";
+import SocialLink from "@/components/organisms/home/SocialLink";
 
-const LINKS = [{ name: "github", link: "" }];
+const LINKS = [{ name: "github", href: "https://github.com/dv970406" }];
 const Contact = () => {
   return (
     <section id="contact" className="h-screen py-4">
@@ -23,24 +24,7 @@ const Contact = () => {
 
           <ul className="flex gap-4">
             {LINKS.map((link) => (
-              <li
-                key={link.name}
-                className="py-1 px-2 border-[1px] rounded-lg border-custom-lightgray hover:border-blue-transition hover:text-custom-blue"
-              >
-                <Link
-                  href="https://github.com/dv970406"
-                  className="flex gap-2"
-                  target="_blank"
-                >
-                  <Image
-                    src={`/${link.name}.png`}
-                    width={24}
-                    height={24}
-                    alt={link.name}
-                  />
-                  <p className="text-sub ">{link.name}</p>
-                </Link>
-              </li>
+              <SocialLink key={link.name} name={link.name} href={link.href} />
             ))}
           </ul>
         </div>
