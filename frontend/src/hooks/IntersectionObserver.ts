@@ -15,7 +15,7 @@ export const useIntersectionObserver = (
           if (entry.isIntersecting) setIsIntersectProject(true);
         });
       },
-      { threshold: 0.02 }
+      { threshold: 0.3 }
     );
 
     observer.observe(projectRef?.current);
