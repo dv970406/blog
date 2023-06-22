@@ -22,7 +22,7 @@ module.exports = {
         "appear-bottom-to-top": {
           from: {
             opacity: 0,
-            transform: "translateY(100%)",
+            transform: "translateY(100px)",
           },
           to: {
             opacity: 1,
@@ -31,7 +31,8 @@ module.exports = {
         },
       },
       animation: {
-        "appear-bottom-to-top": "1s appear-bottom-to-top ease-in-out forwards",
+        "appear-bottom-to-top":
+          "0.6s appear-bottom-to-top ease-in-out forwards",
       },
     },
   },
