@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useRef } from "react";
 import SendEmail from "@/components/organisms/home/SendEmail";
 
-const LINKS = [{ name: "Github", link: "" }];
+const LINKS = [{ name: "github", link: "" }];
 const Contact = () => {
   return (
     <section id="contact" className="h-screen py-4">
