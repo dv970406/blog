@@ -10,7 +10,7 @@ const Information = () => {
         width="0"
         height="0"
         sizes="100vw"
-        src="/Valley.svg"
+        src="/valley.svg"
         alt="valley"
         className="absolute inset-x-0 w-full h-auto top-1/3 lg:top-auto"
         priority
