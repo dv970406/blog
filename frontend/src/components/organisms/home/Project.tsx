@@ -72,7 +72,7 @@ const Project = ({
               <li>
                 <Link target="_blank" href={github}>
                   <Image
-                    src={"/Github.png"}
+                    src={"/github.png"}
                     width={25}
                     height={25}
                     alt={title}
@@ -83,14 +83,14 @@ const Project = ({
             {link && (
               <li>
                 <Link target="_blank" href={link}>
-                  <Image src={"/Link.png"} width={25} height={25} alt={title} />
+                  <Image src={"/link.png"} width={25} height={25} alt={title} />
                 </Link>
               </li>
             )}
             {review && (
               <li>
                 <Link target="_blank" href={review}>
-                  <Image src={"/Bulb.png"} width={25} height={25} alt={title} />
+                  <Image src={"/bulb.png"} width={25} height={25} alt={title} />
                 </Link>
               </li>
             )}
