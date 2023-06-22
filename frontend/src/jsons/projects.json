@@ -13,7 +13,7 @@
     ],
     "github": "",
     "link": "https://www.sopa.pro",
-    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=4ffc93a0a4064b26a6ad53d5ef3dcc5f&pm=c"
+    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=4ffc93a0a4064b26a6ad53d5ef3dcc5f&pm=c"
   },
   {
     "title": "intern-project",
@@ -22,7 +22,7 @@
     "stacks": ["HTML", "CSS", "Javascript", "Express"],
     "github": "",
     "link": "",
-    "review": ""
+    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=2918a8df9a694643b5b7545421dbae27&pm=c"
   },
   {
     "title": "relay study",
@@ -31,7 +31,7 @@
     "stacks": ["React", "Emotion", "Typescript", "Relay", "NestJS", "TypeORM"],
     "github": "",
     "link": "",
-    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=765fba4515644a5684c80bc402fc2480&pm=c"
+    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=765fba4515644a5684c80bc402fc2480&pm=c"
   },
   {
     "title": "poc",
@@ -40,7 +40,7 @@
     "stacks": ["React", "TailwindCSS", "Recoil", "Typescript", "SignalR"],
     "github": "",
     "link": "",
-    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=643f52e17abe462f9af8655fbb4de3c0&pm=c"
+    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=643f52e17abe462f9af8655fbb4de3c0&pm=c"
   },
   {
     "title": "recruit",
@@ -58,6 +58,6 @@
     ],
     "github": "https://github.com/dv970406/danggn-recruit",
     "link": "https://danggn-recruit.vercel.app/",
-    "review": "https://www.notion.so/choiseongjun/0aff7867dea548f48537dfad1bb2aef3?p=c15c5530600240b2a3df4a1aff52fa70&pm=c"
+    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=c15c5530600240b2a3df4a1aff52fa70&pm=c"
   }
 ]
