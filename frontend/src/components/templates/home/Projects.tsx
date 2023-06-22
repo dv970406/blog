@@ -1,6 +1,6 @@
 import React from "react";
 import projectsData from "@/jsons/projects.json";
-import Title from "@/components/molecules/Title";
+import Title from "@/components/atomics/Title";
 import Project from "@/components/organisms/home/Project";
 
 const Projects = () => {
