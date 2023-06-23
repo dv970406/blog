@@ -1,48 +1,5 @@
 [
   {
-    "title": "sopa",
-    "description": "사이드 프로젝트, 포트폴리오 팀원 모집 사이트입니다. Framer-motion을 활용한 인터랙티브 웹을 구성하였습니다.",
-    "thumbnail": "sopa.gif",
-    "stacks": [
-      "NextJS",
-      "TailwindCSS",
-      "Recoil",
-      "Apollo",
-      "Typescript",
-      "Prisma"
-    ],
-    "github": "",
-    "link": "https://www.sopa.pro",
-    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=4ffc93a0a4064b26a6ad53d5ef3dcc5f&pm=c"
-  },
-  {
-    "title": "intern-project",
-    "description": "인턴 시절 과제로 진행한 바닐라 자바스크립트로 만든 사내 연차관리 프로젝트입니다. 리액트처럼 작동하도록 만들기 위해 웹 컴포넌트를 활용하여 SPA스럽게 만들어보았습니다.",
-    "thumbnail": "intern-project.gif",
-    "stacks": ["HTML", "CSS", "Javascript", "Express"],
-    "github": "",
-    "link": "",
-    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=2918a8df9a694643b5b7545421dbae27&pm=c"
-  },
-  {
-    "title": "relay study",
-    "description": "Relay 학습 목적으로 만든 사내 연차관리 프로젝트입니다. 기본적인 Query, Mutation 요청인 CRUD와 Subscription, Infinite Scrolling등 Relay의 심화적인 기능을 구현하였습니다.",
-    "thumbnail": "relay.gif",
-    "stacks": ["React", "Emotion", "Typescript", "Relay", "NestJS", "TypeORM"],
-    "github": "",
-    "link": "",
-    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=765fba4515644a5684c80bc402fc2480&pm=c"
-  },
-  {
-    "title": "poc",
-    "description": "사내 PoC 프로젝트입니다. C#의 소켓통신 기술인 SignalR을 활용하여 데이터를 받아 UI로 위젯을 띄워주고 Unity 장비에 데이터를 넘겨주어 시각적으로 장비의 상태를 나타내는 역할을 맡았습니다.",
-    "thumbnail": "poc.gif",
-    "stacks": ["React", "TailwindCSS", "Recoil", "Typescript", "SignalR"],
-    "github": "",
-    "link": "",
-    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=643f52e17abe462f9af8655fbb4de3c0&pm=c"
-  },
-  {
     "title": "recruit",
     "description": "당근마켓의 채용사이트를 3D와 2D, 스크롤 인터랙티브를 활용하여 리뉴얼해본 프로젝트입니다.",
     "thumbnail": "recruit.gif",
@@ -59,5 +16,48 @@
     "github": "https://github.com/dv970406/danggn-recruit",
     "link": "https://danggn-recruit.vercel.app/",
     "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=c15c5530600240b2a3df4a1aff52fa70&pm=c"
+  },
+  {
+    "title": "poc",
+    "description": "사내 PoC 프로젝트입니다. C#의 소켓통신 기술인 SignalR을 활용하여 데이터를 받아 UI로 위젯을 띄워주고 Unity 장비에 데이터를 넘겨주어 시각적으로 장비의 상태를 나타내는 역할을 맡았습니다.",
+    "thumbnail": "poc.gif",
+    "stacks": ["React", "TailwindCSS", "Recoil", "Typescript", "SignalR"],
+    "github": "",
+    "link": "",
+    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=643f52e17abe462f9af8655fbb4de3c0&pm=c"
+  },
+  {
+    "title": "relay study",
+    "description": "Relay 학습 목적으로 만든 사내 연차관리 프로젝트입니다. 기본적인 Query, Mutation 요청인 CRUD와 Subscription, Infinite Scrolling등 Relay의 심화적인 기능을 구현하였습니다.",
+    "thumbnail": "relay.gif",
+    "stacks": ["React", "Emotion", "Typescript", "Relay", "NestJS", "TypeORM"],
+    "github": "",
+    "link": "",
+    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=765fba4515644a5684c80bc402fc2480&pm=c"
+  },
+  {
+    "title": "intern-project",
+    "description": "인턴 시절 과제로 진행한 바닐라 자바스크립트로 만든 사내 연차관리 프로젝트입니다. 리액트처럼 작동하도록 만들기 위해 웹 컴포넌트를 활용하여 SPA스럽게 만들어보았습니다.",
+    "thumbnail": "intern-project.gif",
+    "stacks": ["HTML", "CSS", "Javascript", "Express"],
+    "github": "",
+    "link": "",
+    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=2918a8df9a694643b5b7545421dbae27&pm=c"
+  },
+  {
+    "title": "sopa",
+    "description": "사이드 프로젝트, 포트폴리오 팀원 모집 사이트입니다. Framer-motion을 활용한 인터랙티브 웹을 구성하였습니다.",
+    "thumbnail": "sopa.gif",
+    "stacks": [
+      "NextJS",
+      "TailwindCSS",
+      "Recoil",
+      "Apollo",
+      "Typescript",
+      "Prisma"
+    ],
+    "github": "",
+    "link": "https://www.sopa.pro",
+    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=4ffc93a0a4064b26a6ad53d5ef3dcc5f&pm=c"
   }
 ]
