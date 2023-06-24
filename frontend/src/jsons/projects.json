@@ -21,7 +21,7 @@
     "title": "poc",
     "description": "사내 PoC 프로젝트입니다. C#의 소켓통신 기술인 SignalR을 활용하여 데이터를 받아 UI로 위젯을 띄워주고 Unity 장비에 데이터를 넘겨주어 시각적으로 장비의 상태를 나타내는 역할을 맡았습니다.",
     "thumbnail": "poc.gif",
-    "stacks": ["React", "TailwindCSS", "Recoil", "Typescript", "SignalR"],
+    "stacks": ["React", "Typescript", "TailwindCSS", "Recoil", "SignalR"],
     "github": "",
     "link": "",
     "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=643f52e17abe462f9af8655fbb4de3c0&pm=c"
@@ -30,7 +30,7 @@
     "title": "relay study",
     "description": "Relay 학습 목적으로 만든 사내 연차관리 프로젝트입니다. 기본적인 Query, Mutation 요청인 CRUD와 Subscription, Infinite Scrolling등 Relay의 심화적인 기능을 구현하였습니다.",
     "thumbnail": "relay.gif",
-    "stacks": ["React", "Emotion", "Typescript", "Relay", "NestJS", "TypeORM"],
+    "stacks": ["React", "Typescript", "Emotion", "Relay", "NestJS", "TypeORM"],
     "github": "",
     "link": "",
     "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=765fba4515644a5684c80bc402fc2480&pm=c"
@@ -50,10 +50,10 @@
     "thumbnail": "sopa.gif",
     "stacks": [
       "NextJS",
+      "Typescript",
       "TailwindCSS",
       "Recoil",
       "Apollo",
-      "Typescript",
       "Prisma"
     ],
     "github": "",
