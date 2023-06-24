@@ -1,6 +1,5 @@
 import Title from "@/components/atomics/Title";
 import Skill from "@/components/organisms/home/Skill";
-import Image from "next/image";
 import React from "react";
 
 const LOGOS = [
@@ -12,6 +11,7 @@ const LOGOS = [
   "Relay",
   "Styled-Components",
   "TailwindCSS",
+  "Recoil",
 ];
 const Skills = () => {
   return (
