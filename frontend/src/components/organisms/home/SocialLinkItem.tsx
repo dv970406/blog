@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-interface ISocialLink {
+interface ISocialLinkItem {
   name: string;
   href: string;
 }
-const SocialLink = ({ name, href }: ISocialLink) => {
+const SocialLinkItem = ({ name, href }: ISocialLinkItem) => {
   return (
     <li
       key={name}
@@ -20,4 +20,4 @@ const SocialLink = ({ name, href }: ISocialLink) => {
   );
 };
 
-export default SocialLink;
+export default SocialLinkItem;

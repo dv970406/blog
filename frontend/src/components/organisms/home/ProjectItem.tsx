@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
-interface IProject {
+interface IProjectItem {
   isOdd: boolean;
   title: string;
   thumbnail: string;
@@ -15,7 +15,7 @@ interface IProject {
   description: string;
   stacks: string[];
 }
-const Project = ({
+const ProjectItem = ({
   isOdd,
   title,
   thumbnail,
@@ -25,7 +25,7 @@ const Project = ({
   priority,
   description,
   stacks,
-}: IProject) => {
+}: IProjectItem) => {
   const projectRef = useRef<HTMLLIElement>(null);
 
   const { isIntersectProject } = useIntersectionObserver(projectRef);
@@ -101,4 +101,4 @@ const Project = ({
   );
 };
 
-export default Project;
+export default ProjectItem;

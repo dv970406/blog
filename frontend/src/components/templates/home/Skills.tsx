@@ -1,5 +1,5 @@
 import Title from "@/components/atomics/Title";
-import Skill from "@/components/organisms/home/Skill";
+import SkillItem from "@/components/organisms/home/SkillItem";
 import React from "react";
 
 const LOGOS = [
@@ -20,7 +20,7 @@ const Skills = () => {
 
       <ul className="grid grid-cols-3 gap-4 mt-10">
         {LOGOS.map((logo) => (
-          <Skill key={logo} logo={logo} />
+          <SkillItem key={logo} logo={logo} />
         ))}
       </ul>
     </section>

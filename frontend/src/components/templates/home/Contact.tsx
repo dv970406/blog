@@ -1,9 +1,7 @@
 import Title from "@/components/atomics/Title";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useRef } from "react";
-import SendEmail from "@/components/organisms/home/SendEmail";
-import SocialLink from "@/components/organisms/home/SocialLink";
+import React from "react";
+import SendEmailForm from "@/components/organisms/home/SendEmailForm";
+import SocialLinkItem from "@/components/organisms/home/SocialLinkItem";
 
 const LINKS = [{ name: "github", href: "https://github.com/dv970406" }];
 const Contact = () => {
@@ -24,11 +22,15 @@ const Contact = () => {
 
           <ul className="flex gap-4">
             {LINKS.map((link) => (
-              <SocialLink key={link.name} name={link.name} href={link.href} />
+              <SocialLinkItem
+                key={link.name}
+                name={link.name}
+                href={link.href}
+              />
             ))}
           </ul>
         </div>
-        <SendEmail />
+        <SendEmailForm />
       </div>
     </section>
   );

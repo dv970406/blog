@@ -1,4 +1,4 @@
-export const sendMessage = async (
+export const fetchEmailApi = async (
   name: string,
   email: string,
   message: string

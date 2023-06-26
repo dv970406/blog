@@ -1,7 +1,7 @@
 import React from "react";
 import projectsData from "@/jsons/projects.json";
 import Title from "@/components/atomics/Title";
-import Project from "@/components/organisms/home/Project";
+import ProjectItem from "@/components/organisms/home/ProjectItem";
 
 const Projects = () => {
   return (
@@ -10,7 +10,7 @@ const Projects = () => {
 
       <ul className="flex flex-col gap-32 mt-10">
         {projectsData.map((project, index) => (
-          <Project
+          <ProjectItem
             key={project.title}
             isOdd={index % 2 === 1}
             priority={index === 0 || index === 1}

@@ -1,10 +1,10 @@
 "use client";
 import Input from "@/components/molecules/Input";
 import Textarea from "@/components/molecules/Textarea";
-import { sendMessage } from "@/func/sendEmail";
+import { fetchEmailApi } from "@/func/fetchEmailApi";
 import React, { FormEventHandler, useRef } from "react";
 
-const SendEmail = () => {
+const SendEmailForm = () => {
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
@@ -18,7 +18,7 @@ const SendEmail = () => {
     const message = messageRef?.current?.value;
 
     if (!name || !email || !message) return;
-    sendMessage(name, email, message);
+    fetchEmailApi(name, email, message);
 
     // reset 작업
     nameRef.current.value = "";
@@ -43,4 +43,4 @@ const SendEmail = () => {
   );
 };
 
-export default SendEmail;
+export default SendEmailForm;
