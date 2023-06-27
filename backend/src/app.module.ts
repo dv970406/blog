@@ -2,6 +2,8 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmExModule } from './core/typeorm-ex.module';
+import { Post } from './post/post.entity';
+import { PostModule } from './post/post.module';
 
 @Module({
   imports: [
@@ -20,9 +22,10 @@ import { TypeOrmExModule } from './core/typeorm-ex.module';
       synchronize: process.env.NODE_ENV === 'dev',
       logging: true,
 
-      entities: [],
+      entities: [Post],
     }),
     TypeOrmExModule,
+    PostModule,
   ],
 })
 export class AppModule {}
