@@ -4,6 +4,10 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmExModule } from './core/typeorm-ex.module';
 import { Post } from './post/post.entity';
 import { PostModule } from './post/post.module';
+import { CategoryModule } from './category/category.module';
+import { Category } from './category/category.entity';
+import { CommentModule } from './comment/comment.module';
+import { Comment } from './comment/Comment.entity';
 
 @Module({
   imports: [
@@ -22,10 +26,12 @@ import { PostModule } from './post/post.module';
       synchronize: process.env.NODE_ENV === 'dev',
       logging: true,
 
-      entities: [Post],
+      entities: [Post, Category, Comment],
     }),
     TypeOrmExModule,
     PostModule,
+    CategoryModule,
+    CommentModule,
   ],
 })
 export class AppModule {}
