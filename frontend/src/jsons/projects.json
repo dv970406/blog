@@ -36,15 +36,6 @@
     "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=765fba4515644a5684c80bc402fc2480&pm=c"
   },
   {
-    "title": "intern-project",
-    "description": "인턴 시절 과제로 진행한 바닐라 자바스크립트로 만든 사내 연차관리 프로젝트입니다. 리액트처럼 작동하도록 만들기 위해 웹 컴포넌트를 활용하여 SPA스럽게 만들어보았습니다.",
-    "thumbnail": "intern-project.gif",
-    "stacks": ["HTML", "CSS", "Javascript", "Express"],
-    "github": "",
-    "link": "",
-    "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=2918a8df9a694643b5b7545421dbae27&pm=c"
-  },
-  {
     "title": "sopa",
     "description": "사이드 프로젝트, 포트폴리오 팀원 모집 사이트입니다. Framer-motion을 활용한 인터랙티브 웹을 구성하였습니다.",
     "thumbnail": "sopa.gif",
