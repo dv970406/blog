@@ -18,7 +18,10 @@ const Contact = () => {
             <h3>South Korea</h3>
           </div>
 
-          <p className="my-10 text-main">dv970406@gmail.com</p>
+          <div className="my-10 text-main">
+            <p>✉️ dv970406@gmail.com</p>
+            <p>☎ 010-7169-5404</p>
+          </div>
 
           <ul className="flex gap-4">
             {LINKS.map((link) => (
