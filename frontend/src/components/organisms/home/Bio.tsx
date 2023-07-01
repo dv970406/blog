@@ -1,12 +1,21 @@
+"use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Bio = () => {
+  const { push } = useRouter();
+
+  const handleNavigateSecretDoor = () => {
+    push(`${process.env.NEXT_PUBLIC_CREATE_POST_PAGE_URL}`);
+  };
+
   return (
     <p className="mt-8 leading-relaxed tracking-wide break-words text-cute">
       적절한 렌더링 기법으로 빠른 경험을 제공하는 것을 중요시하고 메모이징,
       디바운싱 등 최적화 수단을 고민하는 등 UX를 향상시키는 것을 좋아하기 때문에
-      React 기반의 NextJS 사용을 선호하고 깔끔한 디자인과 반응형 웹을
-      지향합니다.
+      React 기반의 NextJS 사용을 선호하고 깔끔한 디자인과 반응형{" "}
+      <span onClick={handleNavigateSecretDoor}>웹</span>
+      을 지향합니다.
       <br />
       <br />
       개발을 열심히 하겠다는 말은 목표에 대한 열정에 불과합니다. 1일 1커밋을
