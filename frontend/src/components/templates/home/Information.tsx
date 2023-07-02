@@ -5,7 +5,7 @@ import React from "react";
 
 const Information = () => {
   return (
-    <section className="h-screen mb-60">
+    <section className="h-screen mb-40">
       <Image
         width="0"
         height="0"
@@ -16,7 +16,7 @@ const Information = () => {
         priority
       />
 
-      <div className="absolute  max-w-[500px] bottom-5">
+      <div className="absolute max-w-[500px] bottom-5">
         <Greeting />
         <Bio />
       </div>

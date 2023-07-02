@@ -1,6 +1,6 @@
 "use client";
-import Input from "@/components/molecules/Input";
-import Textarea from "@/components/molecules/Textarea";
+import Input from "@/components/molecules/inputs/Input";
+import Textarea from "@/components/molecules/inputs/Textarea";
 import { useFetchEmail } from "@/hooks/fetchEmail";
 import React, { FormEventHandler, useRef } from "react";
 
@@ -34,7 +34,7 @@ const SendEmailForm = () => {
   };
   return (
     <form
-      className="p-4 mt-10 rounded-lg lg:mt-0 lg:w-1/2 bg-custom-darkgray"
+      className="p-4 mt-10 mb-4 rounded-lg lg:mt-0 bg-custom-darkgray "
       onSubmit={handleSendMessage}
     >
       <Input title="Name" inputRef={nameRef} minLength={2} />

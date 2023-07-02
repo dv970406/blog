@@ -3,7 +3,10 @@ import React from "react";
 import SendEmailForm from "@/components/organisms/home/SendEmailForm";
 import SocialLinkItem from "@/components/organisms/home/SocialLinkItem";
 
-const LINKS = [{ name: "github", href: "https://github.com/dv970406" }];
+const LINKS = [
+  { name: "github", href: "https://github.com/dv970406" },
+  // { name: "notion", href: "" },
+];
 const Contact = () => {
   return (
     <section id="contact" className="h-screen py-4">
@@ -33,7 +36,9 @@ const Contact = () => {
             ))}
           </ul>
         </div>
-        <SendEmailForm />
+        <div className="lg:w-1/2">
+          <SendEmailForm />
+        </div>
       </div>
     </section>
   );
