@@ -2,13 +2,15 @@ import React from "react";
 import projectsData from "@/jsons/projects.json";
 import Title from "@/components/atomics/Title";
 import ProjectItem from "@/components/organisms/home/ProjectItem";
+import ListWrapper from "@/components/molecules/wrappers/ListWrapper";
+import SmoothScrollSection from "@/components/molecules/wrappers/SmoothScrollSection";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-4 mb-60 scroll-smooth">
+    <SmoothScrollSection sectionId="projects">
       <Title title="PROJECTS" />
 
-      <ul className="flex flex-col gap-32 mt-10">
+      <ListWrapper>
         {projectsData.map((project, index) => (
           <ProjectItem
             key={project.title}
@@ -17,8 +19,8 @@ const Projects = () => {
             {...project}
           />
         ))}
-      </ul>
-    </section>
+      </ListWrapper>
+    </SmoothScrollSection>
   );
 };
 

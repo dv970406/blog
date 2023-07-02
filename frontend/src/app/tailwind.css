@@ -21,13 +21,13 @@
     @apply text-xl font-semibold sm:text-2xl;
   }
   .text-main {
-    @apply text-lg  font-medium;
+    @apply text-lg font-medium;
   }
   .text-sub {
-    @apply text-[0.95rem] font-normal;
+    @apply text-base font-normal;
   }
   .text-cute {
-    @apply text-xs font-medium;
+    @apply text-sm font-medium;
   }
   .text-gradient {
     @apply text-transparent bg-clip-text bg-gradient-to-tr from-[#B2A4FF] from-[5%]  via-[#FFB4B4] via-[50%] to-[#FDF7C3] to-[80%];

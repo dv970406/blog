@@ -1,4 +1,5 @@
 import Title from "@/components/atomics/Title";
+import GridWrapper from "@/components/molecules/wrappers/GridWrapper";
 import SkillItem from "@/components/organisms/home/SkillItem";
 import React from "react";
 
@@ -18,11 +19,11 @@ const Skills = () => {
     <section className="h-screen py-4">
       <Title title="SKILLS" />
 
-      <ul className="grid grid-cols-3 gap-4 mt-10">
+      <GridWrapper>
         {LOGOS.map((logo) => (
           <SkillItem key={logo} logo={logo} />
         ))}
-      </ul>
+      </GridWrapper>
     </section>
   );
 };
