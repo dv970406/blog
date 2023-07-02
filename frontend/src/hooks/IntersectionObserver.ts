@@ -5,14 +5,14 @@ import { RefObject, useEffect, useState } from "react";
 export const useIntersectionObserver = (
   projectRef: RefObject<HTMLLIElement>
 ) => {
-  const [isIntersectProject, setIsIntersectProject] = useState(false);
+  const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
     if (!projectRef.current) return;
     let observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) setIsIntersectProject(true);
+          if (entry.isIntersecting) setIsIntersecting(true);
         });
       },
       { threshold: 0.7 }
@@ -26,5 +26,5 @@ export const useIntersectionObserver = (
     };
   }, []);
 
-  return { isIntersectProject };
+  return { isIntersecting };
 };

@@ -1,3 +1,4 @@
+import Career from "@/components/templates/home/Career";
 import Contact from "@/components/templates/home/Contact";
 import Information from "@/components/templates/home/Information";
 import Projects from "@/components/templates/home/Projects";
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Information />
       <Projects />
+      <Career />
       <Skills />
       <Contact />
     </>

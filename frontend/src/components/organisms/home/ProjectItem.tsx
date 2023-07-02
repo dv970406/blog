@@ -28,13 +28,12 @@ const ProjectItem = ({
 }: IProjectItem) => {
   const projectRef = useRef<HTMLLIElement>(null);
 
-  const { isIntersectProject } = useIntersectionObserver(projectRef);
+  const { isIntersecting } = useIntersectionObserver(projectRef);
   return (
     <li
       ref={projectRef}
-      key={title}
-      className={`flex flex-col items-center gap-4 lg:justify-between lg:gap-20 lg:flex-row  opacity-0
-       ${isIntersectProject && "animate-appear-bottom-to-top"}
+      className={`flex flex-col items-center gap-4 lg:justify-between lg:gap-20 lg:flex-row opacity-0
+       ${isIntersecting && "animate-appear-bottom-to-top"}
       `}
     >
       <Image
