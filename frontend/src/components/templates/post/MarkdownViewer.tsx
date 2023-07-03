@@ -12,7 +12,7 @@ interface IMarkdownViewer {
 const MarkdownViewer = ({ content }: IMarkdownViewer) => {
   return (
     <ReactMarkdown
-      className="mt-40 prose max-w-none prose-headings:text-slate-400 prose-p:text-slate-500 prose-li:text-slate-500 prose-a:text-custom-blue prose-strong:text-slate-300"
+      className="mt-10 prose max-w-none prose-headings:text-slate-400 prose-p:text-slate-500 prose-li:text-slate-500 prose-a:text-custom-blue prose-strong:text-slate-300"
       remarkPlugins={[remarkGfm]}
       components={{
         code({ node, inline, className, children, ...props }) {

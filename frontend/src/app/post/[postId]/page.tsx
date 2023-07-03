@@ -1,22 +1,35 @@
+import Title from "@/components/atomics/Title";
 import MarkdownViewer from "@/components/templates/post/MarkdownViewer";
+import { IPostDetail } from "@/types/post";
+import { NextPage } from "next";
+import { redirect } from "next/navigation";
 import React from "react";
 
-const PostDetailPage = () => {
-  const content = `dsa
+export const getPostById = async (postId: string) => {
+  const response = await fetch(process.env.SERVER_URL + `/post/${postId}`);
 
-dsadas
+  const postDetailData = await response.json();
 
-~~~javascript
-const dsa= 
-~~~
+  // if (!response.ok) {
+  //   redirect("/post");
+  // }
 
-![image-20230702133740307](https://raw.githubusercontent.com/dv970406/blog-images/main/images/image-20230702133740307.png)
+  return postDetailData;
+};
 
-`;
+interface IPostDetailPage {
+  params: {
+    postId: string;
+  };
+}
+
+const PostDetailPage: NextPage<IPostDetailPage> = async ({ params }) => {
+  const postDetailData: IPostDetail = await getPostById(params.postId);
   return (
-    <>
-      <MarkdownViewer content={content} />
-    </>
+    <article className="mt-10">
+      <Title title={postDetailData.title} />
+      <MarkdownViewer content={postDetailData.content} />
+    </article>
   );
 };
 
