@@ -3,16 +3,20 @@ import React from "react";
 
 const NAV_TABS = [
   {
-    href: "projects",
+    href: "#projects",
     tabName: "Projects",
   },
   {
-    href: "career",
+    href: "#career",
     tabName: "Career",
   },
   {
-    href: "contact",
+    href: "#contact",
     tabName: "Contact",
+  },
+  {
+    href: "post",
+    tabName: "Blog",
   },
 ];
 const Header = () => {
@@ -26,7 +30,7 @@ const Header = () => {
             <li key={tab.tabName}>
               {/* Link컴포넌트는 Smooth 스크롤이 작동하질 않음 */}
               <a
-                href={"/#" + tab.href}
+                href={"/" + tab.href}
                 className="cursor-pointer hover:text-blue-transition"
               >
                 {tab.tabName}

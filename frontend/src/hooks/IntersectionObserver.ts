@@ -3,12 +3,12 @@
 import { RefObject, useEffect, useState } from "react";
 
 export const useIntersectionObserver = (
-  projectRef: RefObject<HTMLLIElement>
+  elementRef: RefObject<HTMLLIElement>
 ) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
-    if (!projectRef.current) return;
+    if (!elementRef.current) return;
     let observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -18,11 +18,11 @@ export const useIntersectionObserver = (
       { threshold: 0.7 }
     );
 
-    observer.observe(projectRef?.current);
+    observer.observe(elementRef?.current);
 
     return () => {
-      if (!projectRef.current) return;
-      observer.unobserve(projectRef?.current);
+      if (!elementRef.current) return;
+      observer.unobserve(elementRef?.current);
     };
   }, []);
 
