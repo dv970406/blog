@@ -18,6 +18,9 @@ export class PostService {
       order: {
         createdAt: 'DESC',
       },
+      relations: {
+        categories: true,
+      },
     });
   }
 
@@ -27,10 +30,10 @@ export class PostService {
 
   async createPost(
     createPostInput: CreatePostInput,
-    imageFiles: Express.Multer.File[],
+    // imageFiles: Express.Multer.File[],
   ): Promise<CreatePostOutput> {
     try {
-      const imageFilesPathArray = imageFiles.map((imageFile) => imageFile.path);
+      // const imageFilesPathArray = imageFiles.map((imageFile) => imageFile.path);
 
       const categories = await this.categoryRepo.find({
         where: {
@@ -40,8 +43,8 @@ export class PostService {
 
       const createdPost = await this.postRepo.save({
         ...createPostInput,
-        imageFiles: imageFilesPathArray,
         categories,
+        // imageFiles: imageFilesPathArray,
       });
 
       return { createdPost };
@@ -53,7 +56,7 @@ export class PostService {
   async updatePost(
     postId: string,
     updatedPostInput: UpdatePostInput,
-    imageFiles: Express.Multer.File[],
+    // imageFiles: Express.Multer.File[],
   ): Promise<UpdatePostOutput> {
     try {
       const findPost = await this.postRepo.findPost(postId);

@@ -4,9 +4,9 @@ import { Column, Entity, OneToMany } from 'typeorm';
 
 @Entity('Category')
 export class Category extends CoreEntity {
-  @Column()
+  @Column({ unique: true })
   categoryName: string;
 
-  @OneToMany(() => Post, (post) => post.category)
-  posts: Post[];
+  // @OneToMany(() => Post, (post) => post.categories)
+  // posts: Post[];
 }

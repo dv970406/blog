@@ -15,8 +15,8 @@ export class Post extends CoreEntity {
   @JoinTable()
   categories: Category[];
 
-  @Column()
-  imageFiles: string[];
+  // @Column()
+  // imageFiles: string[];
 
   @OneToMany(() => Comment, (comment) => comment.post)
   comments: Comment[];

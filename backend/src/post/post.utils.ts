@@ -1,5 +1,3 @@
-import * as AWS from 'aws-sdk';
-
 // export const uploadImageFiles = async ({ folderName,files }) => {
 //   const objectName = `${folderName}/${Date.now()}.png`;
 //   const upload = await new AWS.S3({

@@ -13,7 +13,7 @@ import { Comment } from './comment/Comment.entity';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: process.env.NODE_ENV === 'dev' ? '.env.local' : '.env.prod',
+      envFilePath: process.env.NODE_ENV === 'dev' ? '.env' : '.env',
       ignoreEnvFile: process.env.NODE_ENV === 'prod',
     }),
     TypeOrmModule.forRoot({
