@@ -1,5 +1,5 @@
 "use client";
-import Input from "@/components/molecules/inputs/Input";
+import InputWithTitle from "@/components/molecules/inputs/InputWithTitle";
 import Textarea from "@/components/molecules/inputs/Textarea";
 import { useFetchEmail } from "@/hooks/fetchEmail";
 import React, { FormEventHandler, useRef } from "react";
@@ -34,11 +34,11 @@ const SendEmailForm = () => {
   };
   return (
     <form
-      className="p-4 mt-10 mb-4 rounded-lg lg:mt-0 bg-custom-darkgray "
+      className="p-4 mb-6 rounded-lg lg:mt-0 bg-custom-darkgray"
       onSubmit={handleSendMessage}
     >
-      <Input title="Name" inputRef={nameRef} minLength={2} />
-      <Input title="Email" inputRef={emailRef} type="email" />
+      <InputWithTitle title="Name" inputRef={nameRef} minLength={2} />
+      <InputWithTitle title="Email" inputRef={emailRef} type="email" />
 
       <Textarea title="Message" textareaRef={messageRef} minLength={2} />
       <div className="flex justify-end">

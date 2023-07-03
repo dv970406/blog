@@ -1,11 +1,11 @@
 import SubTitle from "@/components/atomics/SubTitle";
 import React, { InputHTMLAttributes, LegacyRef } from "react";
 
-interface IInput extends InputHTMLAttributes<HTMLInputElement> {
+interface IInputWithTitle extends InputHTMLAttributes<HTMLInputElement> {
   inputRef: LegacyRef<HTMLInputElement>;
   title: string;
 }
-const Input = ({ inputRef, type, title }: IInput) => {
+const InputWithTitle = ({ inputRef, type, title }: IInputWithTitle) => {
   return (
     <>
       <SubTitle title={title} />
@@ -22,4 +22,4 @@ const Input = ({ inputRef, type, title }: IInput) => {
   );
 };
 
-export default Input;
+export default InputWithTitle;

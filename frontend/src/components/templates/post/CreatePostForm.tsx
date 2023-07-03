@@ -1,10 +1,15 @@
 "use client";
-import Input from "@/components/molecules/Input";
+import InputWithTitle from "@/components/molecules/inputs/InputWithTitle";
 import React, { useRef } from "react";
 
-const CreatePostForm = () => {
+interface ICreatePostForm {}
+const CreatePostForm = ({}: ICreatePostForm) => {
   const titleRef = useRef<HTMLInputElement>(null);
-  return <Input title="제목을 입력하세요." inputRef={titleRef} />;
+  return (
+    <section className="p-4 mt-10 rounded-lg bg-custom-darkgray">
+      <InputWithTitle title="Title" inputRef={titleRef} />
+    </section>
+  );
 };
 
 export default CreatePostForm;
