@@ -5,17 +5,17 @@ import { NextPage } from "next";
 import { redirect } from "next/navigation";
 import React from "react";
 
-export const getPostById = async (postId: string) => {
-  const response = await fetch(process.env.SERVER_URL + `/post/${postId}`);
+// export const getPostById = async (postId: string) => {
+//   const response = await fetch(process.env.SERVER_URL + `/post/${postId}`);
 
-  const postDetailData = await response.json();
+//   const postDetailData = await response.json();
 
-  // if (!response.ok) {
-  //   redirect("/post");
-  // }
+//   // if (!response.ok) {
+//   //   redirect("/post");
+//   // }
 
-  return postDetailData;
-};
+//   return postDetailData;
+// };
 
 interface IPostDetailPage {
   params: {
@@ -23,12 +23,12 @@ interface IPostDetailPage {
   };
 }
 
-const PostDetailPage: NextPage<IPostDetailPage> = async ({ params }) => {
-  const postDetailData: IPostDetail = await getPostById(params.postId);
+const PostDetailPage = async ({ params }: IPostDetailPage) => {
+  // const postDetailData: IPostDetail = await getPostById(params.postId);
   return (
     <article className="mt-10">
-      <Title title={postDetailData.title} />
-      <MarkdownViewer content={postDetailData.content} />
+      {/* <Title title={postDetailData.title} />
+      <MarkdownViewer content={postDetailData.content} /> */}
     </article>
   );
 };

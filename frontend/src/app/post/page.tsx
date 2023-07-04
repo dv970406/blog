@@ -1,36 +1,39 @@
 import PostsDisplay from "@/components/templates/post/PostsDisplay";
 import PostsFilterer from "@/components/templates/post/PostsFilterer";
+import { ICategory } from "@/types/category";
+import { IGetAllPostsOutput } from "@/types/post";
 import React, { Suspense } from "react";
 
-export const getPosts = async () => {
-  const response = await fetch(process.env.SERVER_URL + `/post`);
+// export const getPosts = async () => {
+//   const response = await fetch(
+//     process.env.SERVER_URL +
+//       `/post?keyword=${""}&categoriesName=${""}&pageParam=1`
+//   );
 
-  const postsData = await response.json();
+//   const allPostsData = await response.json();
 
-  // if (!response.ok) {
-  //   redirect("/post");
-  // }
+//   // if (!response.ok) {
+//   //   redirect("/post");
+//   // }
 
-  return postsData;
-};
-export const getCategories = async () => {
-  const response = await fetch(process.env.SERVER_URL + `/category`);
+//   return allPostsData;
+// };
+// export const getCategories = async () => {
+//   const response = await fetch(process.env.SERVER_URL + `/category`);
 
-  const categoriesData = await response.json();
+//   const categoriesData = await response.json();
 
-  return categoriesData;
-};
+//   return categoriesData;
+// };
 
 const PostPage = async () => {
-  const categoriesData = await getCategories();
-  const postsData = getPosts();
+  // const categoriesData: ICategory[] = await getCategories();
+  // const postsData: IGetAllPostsOutput = await getPosts();
 
   return (
     <>
-      <PostsFilterer categoriesData={categoriesData} />
-      <Suspense fallback={<p>loading...</p>}>
-        <PostsDisplay postsData={postsData} />
-      </Suspense>
+      {/* <PostsFilterer categoriesData={categoriesData} />
+      <PostsDisplay postsData={postsData} /> */}
     </>
   );
 };
