@@ -14,10 +14,10 @@ const NAV_TABS = [
     href: "#contact",
     tabName: "Contact",
   },
-  {
-    href: "post",
-    tabName: "Blog",
-  },
+  // {
+  //   href: "post",
+  //   tabName: "Blog",
+  // },
 ];
 const Header = () => {
   return (
