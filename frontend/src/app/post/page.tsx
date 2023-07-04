@@ -1,8 +1,4 @@
-import PostsDisplay from "@/components/templates/post/PostsDisplay";
-import PostsFilterer from "@/components/templates/post/PostsFilterer";
-import { ICategory } from "@/types/category";
-import { IGetAllPostsOutput } from "@/types/post";
-import React, { Suspense } from "react";
+import React from "react";
 
 // export const getPosts = async () => {
 //   const response = await fetch(

@@ -1,8 +1,3 @@
-import Title from "@/components/atomics/Title";
-import MarkdownViewer from "@/components/templates/post/MarkdownViewer";
-import { IPostDetail } from "@/types/post";
-import { NextPage } from "next";
-import { redirect } from "next/navigation";
 import React from "react";
 
 // export const getPostById = async (postId: string) => {
