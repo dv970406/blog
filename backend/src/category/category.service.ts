@@ -8,7 +8,7 @@ export class CategoryService {
   async getCategories() {
     return this.categoryRepo.find({
       order: {
-        createdAt: 'DESC',
+        createdAt: 'ASC',
       },
     });
   }

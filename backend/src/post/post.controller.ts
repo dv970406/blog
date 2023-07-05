@@ -6,6 +6,7 @@ import {
   Param,
   Post,
   Put,
+  Query,
   UploadedFiles,
   UseInterceptors,
 } from '@nestjs/common';
@@ -15,13 +16,14 @@ import { UpdatePostInput, UpdatePostOutput } from './dtos/update.dto';
 import { DeletePostOutput } from './dtos/delete.dto';
 import { FilesInterceptor } from '@nestjs/platform-express';
 import * as multerS3 from 'multer-s3';
+import { FilteringPosts, GetAllPostsOutput } from './dtos/gets.dto';
 
 @Controller('post')
 export class PostController {
   constructor(private readonly postService: PostService) {}
   @Get('')
-  getAllPosts() {
-    return this.postService.getAllPosts();
+  getAllPosts(@Query() filterData: FilteringPosts): Promise<GetAllPostsOutput> {
+    return this.postService.getAllPosts(filterData);
   }
   @Get('/:postId')
   getPostById(@Param() { postId }) {

@@ -4,7 +4,9 @@ import { CreatePostInput, CreatePostOutput } from './dtos/create.dto';
 import { UpdatePostInput, UpdatePostOutput } from './dtos/update.dto';
 import { DeletePostOutput } from './dtos/delete.dto';
 import { CategoryRepository } from 'src/category/category.repository';
-import { In } from 'typeorm';
+import { In, Like } from 'typeorm';
+import { FilteringPosts, GetAllPostsOutput } from './dtos/gets.dto';
+import { GET_COUNT } from 'src/core/core.variables';
 
 @Injectable()
 export class PostService {
@@ -13,15 +15,48 @@ export class PostService {
     private readonly categoryRepo: CategoryRepository,
   ) {}
 
-  async getAllPosts() {
-    return this.postRepo.find({
+  async getAllPosts({
+    categoriesName,
+    keyword,
+    pageParam,
+  }: FilteringPosts): Promise<GetAllPostsOutput> {
+    // 인피니티 스크롤 구현
+
+    const findPosts = await this.postRepo.find({
+      where: {
+        ...(keyword && { title: Like(`%${keyword}%`) }),
+
+        ...(categoriesName && {
+          categories: {
+            categoryName: In(categoriesName),
+          },
+        }),
+      },
       order: {
         createdAt: 'DESC',
+        categories: {
+          createdAt: 'ASC',
+        },
       },
       relations: {
         categories: true,
       },
+
+      // 가장 흔한 패턴의 take, skip 사용
+      take: GET_COUNT,
+      skip: (+pageParam - 1) * GET_COUNT,
     });
+
+    let isLastPage = false;
+    // 개수가 5개 미만이면 다음에는 더이상 가져올 것이 없다는 뜻
+    if (findPosts.length < GET_COUNT) {
+      isLastPage = true;
+    }
+
+    return {
+      datas: findPosts,
+      isLastPage,
+    };
   }
 
   async getPostById(postId: string) {
