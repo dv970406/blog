@@ -17,7 +17,7 @@ const Information = () => {
       />
 
       <div className="absolute max-w-[500px] bottom-5">
-        <Greeting />
+        {/* <Greeting /> */}
         <Bio />
       </div>
     </section>
