@@ -15,7 +15,7 @@ export const useIntersectionObserver = (
           if (entry.isIntersecting) setIsIntersecting(true);
         });
       },
-      { threshold: 0.7 }
+      { threshold: 0.3 }
     );
 
     observer.observe(elementRef?.current);
