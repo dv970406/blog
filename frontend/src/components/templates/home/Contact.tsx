@@ -5,7 +5,7 @@ import SocialLinkItem from "@/components/organisms/home/SocialLinkItem";
 
 const LINKS = [
   { name: "github", href: "https://github.com/dv970406" },
-  // { name: "notion", href: "" },
+  { name: "velog", href: "https://velog.io/@dv970406" },
 ];
 const Contact = () => {
   return (
