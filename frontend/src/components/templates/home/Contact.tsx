@@ -3,7 +3,7 @@ import React from "react";
 import SendEmailForm from "@/components/organisms/home/SendEmailForm";
 import SocialLinkItem from "@/components/organisms/home/SocialLinkItem";
 
-const LINKS = [
+const SOCIAL_LINKS_ARRAY = [
   { name: "github", href: "https://github.com/dv970406" },
   { name: "velog", href: "https://velog.io/@dv970406" },
 ];
@@ -27,7 +27,7 @@ const Contact = () => {
           </div>
 
           <ul className="flex gap-4">
-            {LINKS.map((link) => (
+            {SOCIAL_LINKS_ARRAY.map((link) => (
               <SocialLinkItem
                 key={link.name}
                 name={link.name}
