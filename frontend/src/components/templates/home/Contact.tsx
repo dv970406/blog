@@ -6,6 +6,10 @@ import SocialLinkItem from "@/components/organisms/home/SocialLinkItem";
 const SOCIAL_LINKS_ARRAY = [
   { name: "github", href: "https://github.com/dv970406" },
   { name: "velog", href: "https://velog.io/@dv970406" },
+  {
+    name: "notion",
+    href: "https://choiseongjun.notion.site/4d21c59ba84740a582a972b9884745b7?v=dbfc6f9e9c5340e689f627bb6552c47f&pvs=4",
+  },
 ];
 const Contact = () => {
   return (

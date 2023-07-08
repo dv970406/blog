@@ -18,7 +18,7 @@ const SkillItem = ({ name, href }: ISkillItem) => {
       </Link>
     </li>
   ) : (
-    <li className="flex flex-col items-center ">
+    <li className="flex flex-col items-center">
       <Image src={`/skills/${name}.svg`} width={64} height={64} alt={name} />
       <p className="text-center text-main ">{name}</p>
     </li>
