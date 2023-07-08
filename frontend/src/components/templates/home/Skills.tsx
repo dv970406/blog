@@ -1,5 +1,6 @@
 import Title from "@/components/atomics/Title";
 import GridWrapper from "@/components/molecules/wrappers/GridWrapper";
+import SmoothScrollSection from "@/components/molecules/wrappers/SmoothScrollSection";
 import SkillItem from "@/components/organisms/home/SkillItem";
 import React from "react";
 
@@ -40,7 +41,7 @@ const SKILLS_ARRAY = [
 ];
 const Skills = () => {
   return (
-    <section className="py-4 mb-40 ">
+    <SmoothScrollSection sectionId="skills">
       <Title title="SKILLS" />
 
       <GridWrapper>
@@ -48,7 +49,7 @@ const Skills = () => {
           <SkillItem key={name} name={name} href={href} />
         ))}
       </GridWrapper>
-    </section>
+    </SmoothScrollSection>
   );
 };
 
