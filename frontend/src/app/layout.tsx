@@ -2,6 +2,8 @@ import Header from "@/components/templates/layout/Header";
 import { Metadata } from "next";
 import "./globals.css";
 import "./tailwind.css";
+import Recoil from "@/providers/recoil";
+import ReactQuery from "@/providers/react-query";
 
 export const metadata: Metadata = {
   title: "SJ's Archive",
@@ -21,9 +23,13 @@ export default function RootLayout({
       <body
         className={`bg-custom-black text-custom-lightgray layout font-pretandard`}
       >
-        <Header />
+        <Recoil>
+          <ReactQuery>
+            <Header />
 
-        <main>{children}</main>
+            <main>{children}</main>
+          </ReactQuery>
+        </Recoil>
       </body>
     </html>
   );
