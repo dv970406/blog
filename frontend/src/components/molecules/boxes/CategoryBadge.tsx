@@ -1,7 +1,9 @@
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 
-interface ICategoryBadge {
+interface ICategoryBadge extends InputHTMLAttributes<HTMLLIElement> {
   categoryName: string;
+  isFilterer?: boolean;
+  isClicked?: boolean;
 }
 
 const getProperColor = (categoryName: string) => {
@@ -13,10 +15,22 @@ const getProperColor = (categoryName: string) => {
   }
 };
 
-const CategoryBadge = ({ categoryName }: ICategoryBadge) => {
+const CategoryBadge = ({
+  categoryName,
+  isFilterer = false,
+  isClicked = false,
+  ...props
+}: ICategoryBadge) => {
   return (
-    <li className={`px-2 py-1 rounded-full ${getProperColor(categoryName)}`}>
-      <span className="text-cute">{categoryName}</span>
+    <li
+      {...props}
+      className={`${
+        isFilterer && "cursor-pointer "
+      } px-2 py-1 rounded-full text-cute transition-opacity ${
+        !isFilterer || isClicked ? "opacity-100" : "opacity-75"
+      } ${getProperColor(categoryName)}`}
+    >
+      {categoryName}
     </li>
   );
 };
