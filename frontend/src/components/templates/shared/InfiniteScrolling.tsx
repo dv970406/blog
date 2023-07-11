@@ -51,11 +51,7 @@ const InfiniteScrolling = ({
     <>
       <>{children}</>
       <div className="flex justify-center w-full">
-        {isLoading ? (
-          <Loader />
-        ) : (
-          isEmptyData && <NoDataNotification dataType={dataType} />
-        )}
+        {isLoading ? <Loader /> : isEmptyData && <NoDataNotification />}
       </div>
       <div ref={observeElement} />
     </>

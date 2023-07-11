@@ -32,13 +32,24 @@ const Header = () => {
         <ul className="flex gap-14">
           {NAV_TABS.map((tab) => (
             <li key={tab.tabName}>
-              {/* Link컴포넌트는 Smooth 스크롤이 작동하질 않음 */}
-              <a
-                href={"/" + tab.href}
-                className="cursor-pointer hover:text-blue-transition"
-              >
-                {tab.tabName}
-              </a>
+              {tab.tabName === "Blog" ? (
+                <Link
+                  href={"/" + tab.href}
+                  className="cursor-pointer hover:text-blue-transition"
+                >
+                  {tab.tabName}
+                </Link>
+              ) : (
+                <>
+                  {/* Link컴포넌트는 Smooth 스크롤이 작동하질 않음 */}
+                  <a
+                    href={"/" + tab.href}
+                    className="cursor-pointer hover:text-blue-transition"
+                  >
+                    {tab.tabName}
+                  </a>
+                </>
+              )}
             </li>
           ))}
         </ul>
