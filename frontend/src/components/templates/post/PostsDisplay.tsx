@@ -61,7 +61,6 @@ const PostsDisplay = async ({ postsData }: IPostsDisplay) => {
       <InfiniteScrolling
         fetchNextPage={fetchNextPage}
         hasNextPage={hasNextPage}
-        dataType="포스팅"
         isEmptyData={posts.length === 0}
         isLoading={getAllPostsFetching || getAllPostsLoading}
       >

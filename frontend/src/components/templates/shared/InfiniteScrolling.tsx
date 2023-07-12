@@ -12,7 +12,6 @@ interface IInfiniteScrolling {
   fetchNextPage: (
     options?: FetchNextPageOptions | undefined
   ) => Promise<InfiniteQueryObserverResult<any, unknown>>;
-  dataType: string;
   isLoading?: boolean;
   isEmptyData: boolean;
 }
@@ -22,7 +21,6 @@ const InfiniteScrolling = ({
   children,
   fetchNextPage,
   hasNextPage,
-  dataType,
   isLoading = false,
   isEmptyData = false,
 }: IInfiniteScrolling) => {
