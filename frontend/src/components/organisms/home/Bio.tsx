@@ -3,7 +3,7 @@ import React from "react";
 const Bio = () => {
   return (
     <p className="mt-8 leading-relaxed tracking-wide break-keep text-sub sm:text-main">
-      적절한 렌더링 기법으로 빠른 경험을 제공하는 것을 중요시하거나 메모이징,
+      적절한 렌더링 기법으로 빠른 경험을 제공하는 것을 중요시하고 메모이징,
       디바운싱 등 최적화 수단을 고민하는 등 UX를 향상시키는 것을 좋아하기 때문에
       NextJS 사용을 선호하고 깔끔한 디자인과 반응형 웹을 지향합니다.
       <br />

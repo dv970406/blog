@@ -18,7 +18,7 @@ const Contact = () => {
 
       <div className="flex flex-col w-full gap-4 lg:flex-row">
         <div className="lg:w-1/2">
-          <h2>Frontend Developer who loves NextJS!</h2>
+          <h2>Frontend Developer</h2>
 
           <div className="my-10">
             <h2>Seong Jun, Choi</h2>

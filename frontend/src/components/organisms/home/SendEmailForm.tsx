@@ -11,7 +11,6 @@ const SendEmailForm = () => {
 
   const { fetchEmail, loading } = useFetchEmail();
 
-  // 이 부분 추상화 더 할 수 있을 듯
   const handleSendMessage: FormEventHandler<HTMLFormElement> = async (
     event
   ) => {
