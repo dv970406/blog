@@ -31,7 +31,7 @@
     "description": "Relay 학습 목적으로 만든 사내 연차관리 프로젝트입니다. 기본적인 Query, Mutation 요청인 CRUD와 Subscription, Infinite Scrolling등 Relay의 심화적인 기능을 구현하였습니다.",
     "thumbnail": "relay.gif",
     "stacks": ["React", "Typescript", "Emotion", "Relay", "NestJS", "TypeORM"],
-    "github": "",
+    "github": "https://github.com/dv970406/tim-manage",
     "link": "",
     "review": "https://choiseongjun.notion.site/095cc7f605ce47be8ef4f9f770d98d85?v=29572bdf500e4ee1b0dcab50477e6623&p=765fba4515644a5684c80bc402fc2480&pm=c"
   },
