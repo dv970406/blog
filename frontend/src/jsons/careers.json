@@ -26,5 +26,18 @@
         ]
       }
     ]
+  },
+  {
+    "duration": "2023.09 ~ ",
+    "company": "아하앤컴퍼니",
+    "position": "Frontend Developer",
+    "introduce": "MAU 1000만, 월 트래픽 800만의 B2C 서비스인 '아하'를 운영하는 기업입니다.",
+    "task": "",
+    "performances": [
+      {
+        "topic": "",
+        "descriptions": []
+      }
+    ]
   }
 ]
