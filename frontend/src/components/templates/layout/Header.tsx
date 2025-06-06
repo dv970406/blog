@@ -11,10 +11,6 @@ const NAV_TABS = [
     tabName: "Career",
   },
   {
-    href: "#skills",
-    tabName: "Skills",
-  },
-  {
     href: "#contact",
     tabName: "Contact",
   },
